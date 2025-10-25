@@ -3,19 +3,28 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-body{margin:0;padding:0;overflow:auto}
+body {
+  margin: 0;
+  padding: 0;
+  overflow: auto;           /* scrollbars */
+  display: flex;
+  justify-content: center;  /* horizontal center */
+  align-items: center;      /* vertical center */
+  min-height: 100vh;
+  background: #f7f7f7;
+}
+
+object {
+  display: block;
+  max-width: 2000px;        /* adjust based on SVG size */
+  max-height: 1600px;       /* adjust based on SVG size */
+}
 </style>
-
-
-<script src="static/js/script.js">
-
-</script>
 </head>
 <body>
 
-
-<img src="main.svg">
-
+<!-- Just change the filename for different SVGs -->
+<object data="main.svg" type="image/svg+xml"></object>
 
 </body>
 </html>
